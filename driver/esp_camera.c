@@ -360,6 +360,7 @@ esp_err_t esp_camera_deinit()
 
 camera_fb_t *esp_camera_fb_get()
 {
+  printf("esp_camera_fb_get(f)");
     if (s_state == NULL) {
         return NULL;
     }
